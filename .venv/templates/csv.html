@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV Dataset Expansion</title>
+</head>
+
+<body style="background-color:#f4f6f8; color:#000; font-family:Arial;">
+
+    <div style="
+        width:420px;
+        margin:100px auto;
+        background:#ffffff;
+        padding:30px;
+        border-radius:8px;
+        text-align:center;
+    ">
+        <h2>CSV Dataset Expansion</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            <label>Upload CSV File</label><br><br>
+            <input type="file" name="csv_file" required><br><br>
+
+            <label>Target Number of Rows</label><br><br>
+            <input type="number" name="target_rows" required><br><br>
+
+            <button type="submit" style="
+                padding:10px 25px;
+                background:#007bff;
+                color:#ffffff;
+                border:none;
+                border-radius:5px;
+                cursor:pointer;
+            ">
+                Generate CSV
+            </button>
+        </form>
+
+        <p style="margin-top:20px;">
+            <a href="/">← Back to Home</a>
+        </p>
+    </div>
+
+</body>
+</html>
