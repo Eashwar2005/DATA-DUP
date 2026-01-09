@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Dataset</title>
+</head>
+<body style="
+    background:#f4f6f8;
+    font-family:Arial;
+">
+
+<div style="
+    width:420px;
+    margin:80px auto;
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    text-align:center;
+">
+
+    <h2>Image Dataset Augmentation</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <label>Upload ZIP of Images</label><br><br>
+        <input type="file" name="zip_file" accept=".zip" required><br><br>
+
+        <label>Number of Images to Generate</label><br><br>
+        <input type="number" name="target_images" required><br><br>
+
+        <button type="submit" style="
+            padding:10px 20px;
+            background:#28a745;
+            color:white;
+            border:none;
+            border-radius:5px;
+        ">Generate Images</button>
+    </form>
+
+    <p style="margin-top:20px;">
+        <a href="/">← Back</a>
+    </p>
+
+</div>
+
+</body>
+</html>
+
