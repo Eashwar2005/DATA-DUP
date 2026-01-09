@@ -5,46 +5,52 @@
     <title>Data Duplicator Home</title>
 </head>
 
-<body style="background-color:#f4f6f8; color:#000; font-family:Arial;">
+<body style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:#000; font-family:Arial; min-height:100vh; margin:0;">
 
     <div style="
         width:420px;
         margin:120px auto;
         background:#ffffff;
         padding:30px;
-        border-radius:8px;
+        border-radius:12px;
         text-align:center;
-        border:1px solid #ddd;
+        border:none;
+        box-shadow:0 10px 30px rgba(0,0,0,0.3);
     ">
 
-        <h1>Data Duplicator</h1>
-
-        <p>Select the dataset type</p>
+        <h1 style="color:#667eea; font-size:32px; margin-bottom:10px;">Data Duplicator</h1>
+        <p style="color:#666; font-size:16px;">Select the dataset type</p>
 
         <div style="margin-top:25px;">
             <a href="/csv" style="
                 display:block;
-                padding:12px;
+                padding:14px;
                 margin-bottom:15px;
-                background:#007bff;
+                background: linear-gradient(135deg, #667eea 0%, #5568d3 100%);
                 color:#ffffff;
                 text-decoration:none;
-                border-radius:5px;
+                border-radius:8px;
                 font-size:16px;
-            ">
-                CSV Dataset
+                font-weight:bold;
+                transition:transform 0.2s, box-shadow 0.2s;
+                box-shadow:0 4px 15px rgba(102, 126, 234, 0.4);
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.6)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.4)';">
+                📊 CSV Dataset
             </a>
 
             <a href="/image" style="
                 display:block;
-                padding:12px;
-                background:#28a745;
+                padding:14px;
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
                 color:#ffffff;
                 text-decoration:none;
-                border-radius:5px;
+                border-radius:8px;
                 font-size:16px;
-            ">
-                Image Dataset
+                font-weight:bold;
+                transition:transform 0.2s, box-shadow 0.2s;
+                box-shadow:0 4px 15px rgba(245, 87, 108, 0.4);
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(245, 87, 108, 0.6)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(245, 87, 108, 0.4)';">
+                🖼️ Image Dataset
             </a>
         </div>
 

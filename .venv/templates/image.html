@@ -1,46 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Image Dataset</title>
+    <meta charset="UTF-8">
+    <title>Image Dataset Augmentation</title>
 </head>
-<body style="
-    background:#f4f6f8;
-    font-family:Arial;
-">
 
-<div style="
-    width:420px;
-    margin:80px auto;
-    background:white;
-    padding:25px;
-    border-radius:8px;
-    text-align:center;
-">
+<body style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:#000; font-family:Arial; min-height:100vh; margin:0; padding:20px;">
 
-    <h2>Image Dataset Augmentation</h2>
+    <div style="
+        width:450px;
+        margin:80px auto;
+        background:#ffffff;
+        padding:40px;
+        border-radius:12px;
+        text-align:center;
+        box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    ">
 
-    <form method="POST" enctype="multipart/form-data">
-        <label>Upload ZIP of Images</label><br><br>
-        <input type="file" name="zip_file" accept=".zip" required><br><br>
+        <h2 style="color:#667eea; font-size:28px; margin-bottom:5px;">🖼️ Image Dataset Augmentation</h2>
+        <p style="color:#999; font-size:14px; margin-bottom:25px;">Duplicate and augment your images</p>
 
-        <label>Number of Images to Generate</label><br><br>
-        <input type="number" name="target_images" required><br><br>
+        <form method="POST" enctype="multipart/form-data">
+            <div style="margin-bottom:20px; text-align:left;">
+                <label style="display:block; color:#333; font-weight:bold; margin-bottom:8px; font-size:14px;">Upload ZIP of Images</label>
+                <input type="file" name="zip_file" accept=".zip" required style="
+                    width:100%;
+                    padding:12px;
+                    border:2px solid #e0e0e0;
+                    border-radius:8px;
+                    box-sizing:border-box;
+                    cursor:pointer;
+                    transition:border-color 0.2s;
+                " onmouseover="this.style.borderColor='#f5576c';" onmouseout="this.style.borderColor='#e0e0e0';">
+            </div>
 
-        <button type="submit" style="
-            padding:10px 20px;
-            background:#28a745;
-            color:white;
-            border:none;
-            border-radius:5px;
-        ">Generate Images</button>
-    </form>
+            <div style="margin-bottom:25px; text-align:left;">
+                <label style="display:block; color:#333; font-weight:bold; margin-bottom:8px; font-size:14px;">Number of Images to Generate</label>
+                <input type="number" name="target_images" required style="
+                    width:100%;
+                    padding:12px;
+                    border:2px solid #e0e0e0;
+                    border-radius:8px;
+                    box-sizing:border-box;
+                    font-size:14px;
+                    transition:border-color 0.2s;
+                " onmouseover="this.style.borderColor='#f5576c';" onmouseout="this.style.borderColor='#e0e0e0';">
+            </div>
 
-    <p style="margin-top:20px;">
-        <a href="/">← Back</a>
-    </p>
+            <button type="submit" style="
+                width:100%;
+                padding:14px;
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                color:#ffffff;
+                border:none;
+                border-radius:8px;
+                cursor:pointer;
+                font-size:16px;
+                font-weight:bold;
+                transition:transform 0.2s, box-shadow 0.2s;
+                box-shadow:0 4px 15px rgba(245, 87, 108, 0.4);
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(245, 87, 108, 0.6)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(245, 87, 108, 0.4)';">
+                🚀 Generate Images
+            </button>
+        </form>
 
-</div>
+        <p style="margin-top:25px; padding-top:25px; border-top:1px solid #e0e0e0;">
+            <a href="/" style="color:#f5576c; text-decoration:none; font-weight:bold; transition:color 0.2s;" onmouseover="this.style.color='#f093fb';" onmouseout="this.style.color='#f5576c';">← Back to Home</a>
+        </p>
+
+    </div>
 
 </body>
 </html>
-

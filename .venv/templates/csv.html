@@ -5,39 +5,66 @@
     <title>CSV Dataset Expansion</title>
 </head>
 
-<body style="background-color:#f4f6f8; color:#000; font-family:Arial;">
+<body style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:#000; font-family:Arial; min-height:100vh; margin:0; padding:20px;">
 
     <div style="
-        width:420px;
-        margin:100px auto;
+        width:450px;
+        margin:80px auto;
         background:#ffffff;
-        padding:30px;
-        border-radius:8px;
+        padding:40px;
+        border-radius:12px;
         text-align:center;
+        box-shadow:0 10px 30px rgba(0,0,0,0.3);
     ">
-        <h2>CSV Dataset Expansion</h2>
+        <h2 style="color:#667eea; font-size:28px; margin-bottom:5px;">📊 CSV Dataset Expansion</h2>
+        <p style="color:#999; font-size:14px; margin-bottom:25px;">Duplicate and expand your CSV data</p>
 
         <form method="POST" enctype="multipart/form-data">
-            <label>Upload CSV File</label><br><br>
-            <input type="file" name="csv_file" required><br><br>
+            <div style="margin-bottom:20px; text-align:left;">
+                <label style="display:block; color:#333; font-weight:bold; margin-bottom:8px; font-size:14px;">Upload CSV File</label>
+                <input type="file" name="csv_file" required style="
+                    width:100%;
+                    padding:12px;
+                    border:2px solid #e0e0e0;
+                    border-radius:8px;
+                    box-sizing:border-box;
+                    cursor:pointer;
+                    transition:border-color 0.2s;
+                " onmouseover="this.style.borderColor='#667eea';" onmouseout="this.style.borderColor='#e0e0e0';">
+            </div>
 
-            <label>Target Number of Rows</label><br><br>
-            <input type="number" name="target_rows" required><br><br>
+            <div style="margin-bottom:25px; text-align:left;">
+                <label style="display:block; color:#333; font-weight:bold; margin-bottom:8px; font-size:14px;">Target Number of Rows</label>
+                <input type="number" name="target_rows" required style="
+                    width:100%;
+                    padding:12px;
+                    border:2px solid #e0e0e0;
+                    border-radius:8px;
+                    box-sizing:border-box;
+                    font-size:14px;
+                    transition:border-color 0.2s;
+                " onmouseover="this.style.borderColor='#667eea';" onmouseout="this.style.borderColor='#e0e0e0';">
+            </div>
 
             <button type="submit" style="
-                padding:10px 25px;
-                background:#007bff;
+                width:100%;
+                padding:14px;
+                background: linear-gradient(135deg, #667eea 0%, #5568d3 100%);
                 color:#ffffff;
                 border:none;
-                border-radius:5px;
+                border-radius:8px;
                 cursor:pointer;
-            ">
-                Generate CSV
+                font-size:16px;
+                font-weight:bold;
+                transition:transform 0.2s, box-shadow 0.2s;
+                box-shadow:0 4px 15px rgba(102, 126, 234, 0.4);
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.6)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.4)';">
+                🚀 Generate CSV
             </button>
         </form>
 
-        <p style="margin-top:20px;">
-            <a href="/">← Back to Home</a>
+        <p style="margin-top:25px; padding-top:25px; border-top:1px solid #e0e0e0;">
+            <a href="/" style="color:#667eea; text-decoration:none; font-weight:bold; transition:color 0.2s;" onmouseover="this.style.color='#764ba2';" onmouseout="this.style.color='#667eea';">← Back to Home</a>
         </p>
     </div>
 
